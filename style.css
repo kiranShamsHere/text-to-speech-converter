@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: rgba(128, 0, 128, 0.788);
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+.hero h1 {
+  font-size: 45px;
+  font-weight: 500;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.hero h1 span {
+  color: pink;
+  text-decoration: underline white;
+}
+textarea {
+  width: 600px;
+  height: 250px;
+  background: rgba(221, 160, 221, 0.479);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  padding: 20px;
+  border-radius: 10px;
+  resize: none;
+  margin-bottom: 30px;
+}
+textarea::placeholder {
+  font-size: 16px;
+  color: #ddd;
+}
+.row {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  gap: 20px;
+}
+button {
+  background: #ff296288;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 35px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+button i {
+  font-size: 20px;
+  text-align: center;
+  padding: 0 3px 0px;
+}
+select {
+  flex: 1;
+  color: white;
+  background: rgba(221, 160, 221, 0.479);
+  height: 50px;
+  padding: 0 20px;
+  outline: none;
+  border: none;
+  border-radius: 35px;
+}
+select option {
+  background: rgba(221, 160, 221, 0.479);
+  color: black;
+}
+@media (max-width: 700px) {
+  textarea {
+    width: 350px;
+    height: 250px;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+  }
+  .hero h1 {
+    font-size: 28px;
+    text-align: center;
+    margin-top: -30px;
+  }
+  .row {
+    display: block;
+    align-items: center;
+    width: 350px;
+    gap: 20px;
+  }
+  select {
+    padding: 10px 30px;
+    margin-top: 10px;
+  }
+  button {
+    margin: auto;
+    margin-top: 25px;
+  }
+}
